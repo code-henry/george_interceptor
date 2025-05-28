@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "George Interceptor",
+  "version": "1.0",
+  "description": "Intercepts after 5 videos to show Joji.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.tiktok.com/*"],
+      "js": ["joji_base64_videos.js", "content.js"]
+    }
+  ]
+}
